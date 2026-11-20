@@ -124,8 +124,8 @@
 
     /* Contact */
     .plain { margin: 0 0 14px; }
-    .plain-links { list-style: none; margin: 0; padding: 0; }
-    .plain-links li { padding: 3px 0; }
+    .plain-links { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; }
+    .plain-links li + li::before { content: "·"; margin: 0 10px; color: var(--muted); }
 
     footer { text-align: center; color: var(--muted); font-size: 0.85rem; padding: 24px; border-top: 1px solid var(--line); }
 
@@ -233,17 +233,14 @@
       <p class="plain">
         <strong>Email:</strong> fderegibus [at] us [dot] es
       </p>
-      <p class="plain">
-        Department of Mathematical Analysis<br>
-        University of Seville<br>
-        C/ Tarfia s/n (Campus Reina Mercedes)<br>
-        41012 Sevilla, Spain
+      <strong>Address:</strong> Department of Mathematical Analysis, University of Seville, C/ Tarfia s/n (Campus Reina Mercedes), 41012 Sevilla, Spain
       </p>
+      
 
       <h2 style="margin-top:32px">Links</h2>
       <ul class="plain-links">
         <li><a href="https://arxiv.org/a/deregibus_f_1.html" target="_blank" rel="noopener">arXiv</a></li>
-        <li><a href="https://scholar.google.com/citations?user=Z9vYzc0AAAAJ" target="_blank" rel="noopener">Google Scholar</a></li>
+        <li><a href="https://scholar.google.com/citations?user=Z9vYzc0AAAAJ" target="_blank" rel="noopener">Scholar</a></li>
         <li><a href="https://mathscinet.ams.org/mathscinet/MRAuthorID/1419013" target="_blank" rel="noopener">MathSciNet</a></li>
         <li><a href="https://orcid.org/0000-0001-5383-2036" target="_blank" rel="noopener">ORCiD</a></li>
         <li><a href="https://sites.google.com/uniroma1.it/ems-tag-anpde/home" target="_blank" rel="noopener">EMS-TAG-ANPDE</a></li>
